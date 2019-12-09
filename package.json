@@ -1,0 +1,25 @@
+{
+  "name": "bookit",
+  "version": "1.0.0",
+  "description": "This is a platform for people to donate books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samicey/BookIT.git"
+  },
+  "keywords": [
+    "Donate",
+    "books",
+    "students",
+    "users"
+  ],
+  "author": "team_magic_fingers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samicey/BookIT/issues"
+  },
+  "homepage": "https://github.com/samicey/BookIT#readme"
+}
