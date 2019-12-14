@@ -10,25 +10,37 @@
         <meta name="description" content="Donate books to those who cannot afford it">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/mainStyle.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="./index.html">BookIT</a>
+      <a class="navbar-brand" href="/">BookIT</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./product.html">All Products <span class="sr-only">(current)</span></a>
+      <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-menu nav-menu mr-auto ">
+            <li class="nav-item active">
+                <a class="nav-link" href="./product.html">About Us <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item active">
+          <li class="nav-item  active">
+            <a class="nav-link" href="./product.html">How It Works </a>
+          </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="./product.html">Contact Us</a>
           </li>
 
         </ul>
+          <% if (locals.user){%>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+          
+          <% } else{ %>
+          <button class="btn btn-outline-success my-2 my-sm-0 btn-reg" ><a href="/SignIn">Sign In</a></button>
+          <button class="btn btn-outline-primary my-2 my-sm-0 btn-reg" ><a href="/Register">Register</a></button>
+          <% } %>
       </div>
     </nav>
