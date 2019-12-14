@@ -10,6 +10,9 @@ Schools and students from rural areas or that are not so privileged can have acc
 ### Team Members
 
 - Obikaonu Samuel, samuelchibuike22@gmail.com
+- Babatunde Oladotun, 
+- Benedict Anteyi, 
+- Victor Regal,
 
 
 # Problem
