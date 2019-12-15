@@ -1,5 +1,9 @@
 <%- include('header') %>
 <style>
+    h1{
+        text-align:center;
+        margin-top:100px;
+    }
 .form-signin, .form-register{
   width: 100%;
   max-width: 330px;
@@ -38,6 +42,7 @@
     .checkUser{
        margin-top:30px; 
     }
+    
 </style>
 
   <form class="form-signin" id="signin">
@@ -46,19 +51,22 @@
   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
   <label for="inputPassword" class="sr-only">Password</label>
   <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkUser mb-3">
+      <a href="#forgetPassword">Oh no my Password? Get it here</a>
+  </div>
   
   <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     <div class="checkUser mb-3">
-      <a href="#registerForm">New Here? Register</a>
+      <a href="#registerForm" id="showReg">New Here? Register</a>
   </div>
   <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
 </form>
-<form class="form-register" id="registerForm">
+<form class="form-register hidden" id="registerForm">
   <h1 class="h3 mb-3 font-weight-normal">Register to Donate a Book</h1>
   <label for="yourName" class="sr-only">Your Name</label>
   <input type="text" id="yourName" class="form-control reg" placeholder="Your Name" required autofocus>
-  <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" id="inputEmail" class="form-control reg" placeholder="Email address" required> 
+  <label for="regEmail" class="sr-only">Email address</label>
+  <input type="email" id="regEmail" class="form-control reg" placeholder="Email address" required> 
   <label for="Password" class="sr-only">Password</label>
   <input type="password" id="Password" class="form-control reg" placeholder="Password" required>
   <label for="confirmPassword" class="sr-only">Confirm Password</label>
@@ -66,10 +74,9 @@
  
     <button class="btn btn-lg btn-primary btn-block reg" type="submit">Register</button>  
     <div class="checkUser mb-3">
-      <a href="#signin">Already Registered? Sign In</a>
+      <a href="#signin" id="showSignIn">Already Registered? Sign In</a>
   </div>
     <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
 </form>
-
 
 <%- include('footer') %>

@@ -1,5 +1,19 @@
 <script src="../js/jQuery.js"></script>
 <script src="../js/bootstrap.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#showReg').on('click',()=>{
+        $('#registerForm').fadeIn()
+        $('#signin').hide()
+        })
+    $('#showSignIn').on('click',()=>{
+        $('#registerForm').hide()
+        $('#signin').fadeIn()
+    })
+    
+})
+
+</script>
 <script src="../js/mainScrit.js"></script>
 </body>
 </html>
