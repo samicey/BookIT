@@ -173,6 +173,10 @@ body, html {
   background: #fff;
   color: #18d26e;
 }
+.img-responsive{
+    max-width: 100%;
+    height:auto;
+}
 homeText{
     display: grid;
 }

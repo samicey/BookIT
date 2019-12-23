@@ -1,15 +1,55 @@
 <%- include('header') %>
+<style>
+    
+    .intro-text p{
+        background-color: #18d26e,0.7;
+        margin-top:25px;
+        font-size:1.5em;
+        max-width:400px;
+    }
+    section#AboutUs{
+        margin-top:-19px;
+        background-color: rgba(206,232,197,0.5);
+    }
+    #AboutUsTitle{
+        padding-top:20px;
+    }
+    #AboutUsContent{
+        padding-left:10px;
+        padding-right:10px;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-column-gap:10px;
+        width:100%;
+        
+    
+    }
+    .about{
+        background-color:black;
+        border-radius:8px;
+        margin-bottom:20px;
+        
+    }
+
+/* Media Queries*/
+
+    @media(max-width:850px){
+        #AboutUsContent{
+            grid-template-columns:1fr;
+          
+        }
+    }
+</style>
 <section id="intro">
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
-            <div class="carousel-background"><img class="responsive-image" src="../assests/childrenStudying.jpg" alt=""></div>
+            <div class="carousel-background"><img class="img-responsive" src="../assests/childrenStudying.jpg" alt=""></div>
             <div class="carousel-container homeText">
               <div class="carousel-content intro-text">
-                <h2>Do you have a <span style="color:#18d26e">BOOK</span> that you don't use anymore?</h2>
-                  <h4>Why not DONATE it</h4>
+                <h2>Do you have a <span style="color:#18d26e">BOOK</span><br />that you don't use anymore?</h2>
                 <p>We connect people who have educational resources to people who are in dear nee of it. Donate today to improve education</p>
                 <a href="/DonateBook" class="btn-get-started scrollto">Donate for Change</a>
               </div>
@@ -21,6 +61,21 @@
     </section>
 <section id="AboutUs">
     <h2 id="AboutUsTitle">About Us</h2>
+    <div id="AboutUsContent">
+        <div class="about">
+            <i>fa-work</i>
+        </div>
+        <div class="about">
+        utjerlhwlrhitrijyiltrjwnhiwt
+            wgilewrhiht
+            ewr;ohtio
+        </div>
+        <div class="about">
+        wkguwrhgkhrilhotlhijtrhi
+            wuerhultrhtr
+            urgtuewroo
+        </div>
+    </div>
 </section>
 <section id="howItWorks">
     <h2 id="HIWtitle">How it Works</h2>
